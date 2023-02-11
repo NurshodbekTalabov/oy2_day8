@@ -1,12 +1,12 @@
-@mixin felxA{
+@mixin flexA{
     display: flex;
     align-items: center;
 }
 
-@mixin felxB{
+@mixin flexB ($item:space-between){
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: $item;
 }
 @mixin flexC{
     @include felxA;
